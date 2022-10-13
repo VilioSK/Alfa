@@ -1,1 +1,4 @@
-console.log("Testovacia sprava z js suboru");
+function show_alert()
+{
+  alert("Toto je alert funkcia");
+}
