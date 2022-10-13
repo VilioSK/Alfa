@@ -2,16 +2,36 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Nazov stranky</title>
+    <title>Formular pacienta</title>
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="features.js"></script>
   </head>
   <body>
-    <h1>Zmena farby formularu</h1>
-    <p>Zadajte farbu ako v hex formate alebo ako nazov farby</p>
-    <label for="body_color">Farba</label>
-    <input type="text" id="body_color" name="body_color"/>
-    <button href="#" onclick="js_change_body_color()">Pouzit farbu</button>
+    <h1>Formular</h1>
+    <p>Zadajte pozadovane udaje</p>
+    <form method="post" name="formular" action="form_validation.php">
+      <p>
+        <label for="meno">Meno</label>
+        <input type="text" id="meno" name="meno"/>
+      </p>
+      <p>
+        <label for="vyska">Vyska</label>
+        <input type="text" id="vyska" name="vyska"/>
+      </p>
+      <p>
+        <label for="vaha">Vaha</label>
+        <input type="text" id="vaha" name="vaha"/>
+      </p>
+      <p>
+        <label for="vek">Vek</label>
+        <input type="text" id="vek" name="vek"/>
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"/>
+      </p>
+      <input type="submit" name="submit" value="Odoslať"/>
+    </form>
     <div id="js_output"></div>
   </body>
 </html>

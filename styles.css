@@ -1,4 +1,18 @@
 body{
-  background-color: red;
   padding: 20px;
+}
+label{
+  display: block;
+}
+input[type=submit]{
+  padding: 5px 10px;
+  border: none;
+  background-color: navy;
+  color: white;
+}
+.button_back{
+  padding: 5px 10px;
+  background-color: navy;
+  color: white;
+  text-decoration: none;
 }
