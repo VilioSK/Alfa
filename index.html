@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Nazov stranky</title>
+    <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="features.js"></script>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Nadpis</h1>
-    <p>toto je skusobny text</p>
-    <p>Pre suhlas kliknite na tlacitko</p>
-    <button href="#" onclick="show_alert()">Suhlas</button>
+    <h1>Zmena farby formularu</h1>
+    <p>Zadajte farbu ako v hex formate alebo ako nazov farby</p>
+    <label for="body_color">Farba</label>
+    <input type="text" id="body_color" name="body_color"/>
+    <button href="#" onclick="js_change_body_color()">Pouzit farbu</button>
+    <div id="js_output"></div>
   </body>
 </html>
