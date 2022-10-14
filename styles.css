@@ -9,12 +9,14 @@ body{
 label{
   display: block;
 }
+
 input[type=submit]{
   padding: 5px 10px;
   border: none;
   background-color: navy;
   color: white;
 }
+
 .button, .button_back{
   padding: 5px 10px;
   background-color: navy;
