@@ -1,6 +1,11 @@
 body{
   padding: 20px;
 }
+.div_block{
+  margin: 10px 0px;
+  padding: 10px;
+}
+
 label{
   display: block;
 }
@@ -10,7 +15,7 @@ input[type=submit]{
   background-color: navy;
   color: white;
 }
-.button_back{
+.button, .button_back{
   padding: 5px 10px;
   background-color: navy;
   color: white;
