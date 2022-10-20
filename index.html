@@ -10,7 +10,7 @@
   <body>
     <h1>Formular</h1>
     <p>Zadajte pozadovane udaje</p>
-    <form method="post" name="formular" action="form_validation.php" onsubmit="return js_form_validate();">
+    <form method="post" name="formular" action="form_validation.php" onshow="js_fill_form();" onsubmit="return js_form_validate();">
       <p>
         <label for="meno">Meno</label>
         <input type="text" id="meno" name="meno" value="Bugs Bunny"/>
@@ -33,6 +33,9 @@
       </p>
       <input type="submit" name="submit" value="Odoslať"/>
     </form>
+    <div>
+      <button class="button" onclick="js_fill_form()">Prepíš údaje</button>
+    </div>
     <div id="js_output" class="div_block">
       <button id="show_js" class="button" onclick="js_show_form_items()">
         Testovacia js funkcia

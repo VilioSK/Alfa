@@ -40,16 +40,35 @@ function js_form_validate()
 
 function js_show_form_items()
 {
-    const form_html = document.forms['formular'];
+    const form_dom = document.forms['formular'];
     let output_html = "";
 
-    for(i=0 ; i < form_html.length; i++)
+    for(i=0 ; i<form_dom.length; i++)
     {
-      if(form_html[i].name == "submit")
+      if(form_dom[i].name == "submit")
         continue;
-      output_html += form_html[i].value + "</br>";
+      output_html += form_dom[i].value + "</br>";
     }
 
     document.getElementById("js_output").innerHTML = output_html;
 
+}
+
+function js_fill_form()
+{
+  const form_defaults = {"meno":"Jozef Mak", "vyska":"180", "vaha":"80", "vek":"35", "email":"jozef.mak@gmail.com"};
+  const form_obj = JSON.parse(form_defaults);
+  const form_dom = document.forms["formular"];
+
+  for(i=0; i<form_dom.length; i++)
+  {
+    let form_name = form_dom[i].name;
+    if(form_defaults[form_name] !== undefined )
+    {
+      form_dom[i].value = form_defaults[form_name];
+    }
+    else{
+      console.log("Ignorujem:" + form_name);
+    }
+  }
 }
